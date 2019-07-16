@@ -2,7 +2,7 @@
 
 This repository contains the adapted [PredNet](https://github.com/coxlab/prednet) from [Lotter et al. (2016)](https://arxiv.org/abs/1605.08104) for the application to air temperature forecasting.
 This is done in context of the Master's Thesis: Deep Learning for Future Frame Prediction of Weather Maps
-The idea is that that the model learns the time-dependent transport patterns of the air temperature near the ground to generate predictions for the next hour(s).
+The idea is that that the model learns the time-dependent transport patterns of the air temperature near the ground to generate predictions for the next hour(s). Here is an example of the moving air temperature above Europe:
 
 ![](airtemp.gif)
 
