@@ -5,6 +5,8 @@ This is done in context of the Master's Thesis: Deep Learning for Future Frame P
 
 The code and the model data is compatible with Keras 2.0 and Python 3.6. 
 
+![](ezgif.com-video-to-gif.gif)
+
 
 ## how to run the model
 
