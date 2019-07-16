@@ -2,13 +2,14 @@
 
 This repository contains the adapted [PredNet](https://github.com/coxlab/prednet) from [Lotter et al. (2016)](https://arxiv.org/abs/1605.08104) for the application to air temperature forecasting.
 This is done in context of the Master's Thesis: Deep Learning for Future Frame Prediction of Weather Maps
+The idea is that that the model learns the time-dependent transport patterns of the air temperature near the ground to generate predictions for the next hour(s).
 
-The code and the model data is compatible with Keras 2.0 and Python 3.6. 
-
-![](ezgif.com-video-to-gif.gif)
+![](airtemp.gif)
 
 
 ## how to run the model
+
+The code and the model data is compatible with Keras 2.0 and Python 3.6. 
 
 ### t+1 predictions
 The code is used for processing and training on ECMWF ERA5 reanaylis data. You can also download trained weights by running `download_models.sh` from the orignal [PredNet repository](https://github.com/coxlab/prednet). The model download includes the original weights trained for the t+1 prediction on the KITTI dataset (moving vehicles), the fine-tuned weights trained to extrapolate the predictions for multiple timesteps.
