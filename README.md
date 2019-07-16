@@ -38,6 +38,9 @@ The code is used for processing and training on ECMWF ERA5 reanaylis data. You c
 	```
 	python evaluate.py
 	```
+![alt text](https://github.com/severin1992/airtemprednet/blob/master/evaluationExample.png?raw=true "t+1 prediction")
+
+
 
 ### multi-step predictions
 
