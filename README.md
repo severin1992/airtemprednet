@@ -38,7 +38,7 @@ The code is used for processing and training on ECMWF ERA5 reanaylis data. You c
 
 ### multi-step predictions
 
-1. **Train the model **
+1. **Train the model**
 
 	By recursively treating the predictions as inputs, the model can also extrapolate further into the future. In `extrap_finetune.py` you can set `extrap_start_time` in order to determine the starting point for the extrapolations. With `nt = 15` and `extrap_start_time = 10` the model starts extrapolating from time-step 10 and the last out corresponds to a t+5 prediction. 
 
@@ -46,9 +46,9 @@ The code is used for processing and training on ECMWF ERA5 reanaylis data. You c
 	python evaluate.py
 	```
 
-2.**Evaluate the model**
+2. **Evaluate the model**
 
-	`evaluate_multistep.py` outputs the mean squarred error (MSE) of the model and creates plots to compare the ground truth with the predictions. 
+	Run `evaluate_multistep.py` to output the mean squarred error (MSE) of the model's extrapolations and create plots to compare the ground truth with the predictions. 
 
 	```
 	python evaluate_multistep.py
