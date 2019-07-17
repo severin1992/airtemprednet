@@ -23,6 +23,8 @@ The code is used for processing and training on ECMWF ERA5 reanaylis data. You c
 	python process_netCDF.py
 	```
 
+	In order to properly train the model, you'll need to normalize the data accordingly. This is done in `data_utils.py`. You can use `minMaxExtractor.py` to analyze the minima and maxima of your data, which is required for the normalization.
+
 2. **Train the model**
 
 	In order to train the model on the reanalysis dat, run `train.py`. This will train a PredNet model for t+1 predictions. The existing weights will be overwritten.
@@ -51,6 +53,7 @@ The code is used for processing and training on ECMWF ERA5 reanaylis data. You c
 	```
 	python evaluate.py
 	```
+
 
 2. **Evaluate the model**
 
